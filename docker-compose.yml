@@ -1,0 +1,9 @@
+version: '3'
+services:
+
+    nginx:
+        container_name: blogCli-nginx-container
+        build: .
+        restart: always
+        ports:
+        - "8089:80"
